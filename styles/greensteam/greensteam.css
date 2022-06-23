@@ -484,12 +484,13 @@ progress::-moz-progress-bar {
   align-items: flex-start;
 }
 body {
-  background-color: #3e4637;
-  font-family: "Trebuchet MS", "Verdana", sans-serif;
-  color: #d8ded3;
-  font-size: 14px;
-  image-rendering: pixelated;
-  margin: 20px 20px;
+    background-image: url(images/cs16-wallpaper.webp);
+    background-color: #3e4637;
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
+    color: #d8ded3;
+    font-size: 14px;
+    image-rendering: pixelated;
+    margin: 20px 20px;
 }
 ::selection {
   background-color: #96892D;
