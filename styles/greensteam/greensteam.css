@@ -484,7 +484,7 @@ progress::-moz-progress-bar {
   align-items: flex-start;
 }
 body {
-    background: url(/images/cs16-wallpaper.webp) no-repeat;
+    background: url(/images/cs16-wallpaper.webp)/* no-repeat*/;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ è Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
