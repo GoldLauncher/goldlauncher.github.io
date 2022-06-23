@@ -485,6 +485,11 @@ progress::-moz-progress-bar {
 }
 body {
     background-image: url(/images/cs16-wallpaper.webp);
+    background: url(images/sun2.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
     background-color: #3e4637;
     font-family: "Trebuchet MS", "Verdana", sans-serif;
     color: #d8ded3;
