@@ -484,12 +484,12 @@ progress::-moz-progress-bar {
   align-items: flex-start;
 }
 body {
-    background: url(/images/cs16-wallpaper.webp)/* no-repeat*/;
+    background: url(/images/cs16-wallpaper.webp) center center;
 	min-height: 93vh;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* современные браузеры */
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* современные браузеры */
     background-color: #3e4637;
     font-family: "Trebuchet MS", "Verdana", sans-serif;
     color: #d8ded3;
