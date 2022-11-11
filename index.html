@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang=en>
-	<title>GoldLauncher | Игры на GoldSrc</title>
-	<link rel=stylesheet type=text/css href="./styles/greensteam/greensteam.css">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GoldLauncher | Игры на GoldSrc</title>
+		<meta name="description" content="">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel=stylesheet type=text/css href="./styles/greensteam/greensteam.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+		
+	</head>
 
-	<main>
-		<nav>
-			<li><a>Главная</a></li>
-			<li><a>Мы ВКонтакте</a></li>
-			<li><a>О лаунчере</a></li>
-			<li><a>Скачать ▾</a>
-				<ul class=dropdown>
-					<li><a>Последняя версия</a></li>
-					<li><a>Версия для Windows XP</a></li>
-				</ul>
-			</li>
-		</nav>
-
-		<div class=window name="Что это?">
-			<!--<div class="titlebar">Green Steam Theme</div>-->
-			<h1>GoldLauncher</h1>
-			<p>Это новый этап в развитии лаунчеров:
-			<br>Безопасно скачивай любые игры на движке GoldSrc.
-			<br>Будь защищен от взломов клиентской части.
-			<br>Выставляй настройки, удобные для игры.
-			<br>Модифицируй игру в своей мастерской как душе угодно.
-			<br>Запускай собственные сервера, создавая комнаты и приглашая друзей.
-			<br>Куча интересных режимов игры, гибкая настройка сервера, большой функционал и ностальгический дизайн старого Steam не оставят тебя равнодушным!</p>
-		</div>
-		<div class="window" name="Консоль">
-			<div class="box inset">
-				<p>] version
-				<br>Protocol version 48
-				<br>Exe version 1.1.2.7/Stdio (cstrike)
-				<br>Exe build: 19:53:27 Aug  3 2020 (8684)</p>
+	<body>
+		<main>
+			<!--<include src="./header.html"></include>-->
+			<div class="windows_content">
+			<include src=""></include>
 			</div>
-			<input type=tel value="version"><button>Отправить</button>
-		</div>
-		<nav>
-			<li><a>Хостинг под любые задачи</a></li>
-			<li><a>Мониторинг игровых серверов</a></li>
-		</nav>
-	</main>
+			<include src="./menu_left.html"></include>
+			<include src="./menu_right.html"></include>
+		</main>
+		<script>
+		if (getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null) {
+			file_url = getUrlParameter('p');
+		}
+		else {
+			file_url = 'index';
+		}
+		$('.windows_content > include').attr('src', './p/' + file_url + '.html');
+	</script>
+	<script src="js/include.js"></script>
+	</body>
 </html>

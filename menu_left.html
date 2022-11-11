@@ -1,0 +1,33 @@
+<style type="text/css">
+   #menu_left {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 30px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+  </style>
+
+<!--<nav>
+	<li><a>Хостинг под любые задачи</a></li>
+	<li><a>Мониторинг игровых серверов</a></li>
+</nav>-->
+		
+<div id="menu_left">
+<a href="#" onclick="download_link_generating()">Скачать игру<br>
+<br>
+<a href="//mon.2d.su" target="_blank">Поиск серверов</a><br>
+<br>
+Настроийки<br>
+<br>
+<a href="#" onclick="window.close()">Выход</a>
+</div>
+
+<script>
+function download_link_generating(){
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+    .test(navigator.userAgent)) {
+    location="/?p=no_support";
+} else location="/?p=downloading";
+}
+</script>
